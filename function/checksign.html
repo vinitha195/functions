@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function checksign(a,b){
+            if(a>0 && b>0){
+                console.log("The numbers is positive");
+            }
+            else if(a<0 && b<0){
+                console.log("The numbers is negative");
+            }
+            else if(a>0 && b<0){
+                console.log("The first number is positive and second number is negative");
+            }
+            else{
+                console.log("The first number is negative and second number is positive");
+            }
+        }
+        var x=parseInt(prompt("enter the first number"));
+        var y=parseInt(prompt("enter the second number"));
+        checksign(x,y);
+    </script>
+</body>
+</html>

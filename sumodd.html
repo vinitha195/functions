@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var sum = 0;
+        for (let i = 1; i <= 20; i++) {
+
+            if (i % 2 != 0) {
+                sum = sum + i;
+
+            }
+
+        }
+        console.log(sum);
+
+
+        arr = [1, 2, 3, 4, 5]
+        arr2 = ["apple", "banana", "orange"]
+        arr3 = [1, "abc", 13.7, true]
+        console.log(arr[1])
+
+        for (i = 0; i < arr.length; i++) {
+            if (arr[i] % 2 == 0) {
+                console.log(arr[i])
+
+            }
+        }
+        console.log("for of")
+
+        for (i of arr) {
+            if (i % 2 == 0) {
+                console.log(i)
+
+            }
+        }
+
+        for (let [index, i] of arr.entries()) {
+
+            console.log(index, i)
+
+
+        }
+
+        person = {
+            name: "aaa",
+            age: 20,
+            place: "kkd"
+        }
+
+        console.log(person.name)
+        person.city = "kochi"
+        person.name = "ramu"
+        console.log(person)
+
+        for (let i in person) {
+            // console.log(person[i])
+            console.log(i,person[i])
+
+        }
+
+        for (let [key, value] of Object.entries(person)) {
+            console.log(key, value);
+        }
+
+
+        word="abcdefg"
+        for (let i of word){
+            console.log(i)
+        }
+    </script>
+
+
+
+</body>
+
+</html>
